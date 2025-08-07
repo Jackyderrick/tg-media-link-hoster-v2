@@ -31,7 +31,7 @@ use_record = {}
 dbconfig = {
     "host": "127.0.0.1",
     "user": "root",
-    "password": "",
+    "password": "ji2022109678",
     "database": "tg_media_bot"
 }
 
