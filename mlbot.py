@@ -18,21 +18,21 @@ import math
 asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
 uvloop.install()
 
-api_id = 00000000
-api_hash = "00000000000000000000000000000"
-bot_token = "000000000:000000000000000000000000000"
+api_id = 24333216
+api_hash = "4a904d13df08f1ef1e2e173423a81338"
+bot_token = "8386748567:AAFQqEzclwokg3_9sQVI2iqRBZljDBhy7xc"
 app = Client("mlkauto", api_id=api_id, api_hash=api_hash,bot_token=bot_token, max_concurrent_transmissions = 1, sleep_threshold = 60)
 
 app.message_cache = Cache(1000000)
 dl_types = [MessageMediaType.PHOTO, MessageMediaType.VIDEO, MessageMediaType.AUDIO, MessageMediaType.DOCUMENT]
-groups = [-1001234567890, {}, {}]
+groups = [-1002712712263, {}, {}]
 use_record = {}
 
 dbconfig = {
     "host": "127.0.0.1",
-    "user": "mlkauto",
-    "password": "000000000000",
-    "database": "mlbot"
+    "user": "root",
+    "password": "",
+    "database": "tg_media_bot"
 }
 
 connection_pool = pooling.MySQLConnectionPool(pool_name="mypool",pool_size=5,**dbconfig)
